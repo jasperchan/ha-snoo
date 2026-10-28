@@ -1,0 +1,115 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "L'appareil est d\u00e9j\u00e0 configur\u00e9"
+        },
+        "error": {
+            "cannot_connect": "\u00c9chec de la connexion",
+            "invalid_auth": "Authentification non valide",
+            "unknown": "Erreur inattendue"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Mot de passe",
+                    "username": "Nom d'utilisateur"
+                },
+                "data_description": {
+                    "password": "Votre mot de passe Snoo",
+                    "username": "Votre nom d'utilisateur ou e-mail Snoo"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "left_clip": {
+                "name": "Clip de s\u00e9curit\u00e9 gauche"
+            },
+            "right_clip": {
+                "name": "Clip de s\u00e9curit\u00e9 droit"
+            }
+        },
+        "button": {
+            "start_snoo": {
+                "name": "D\u00e9marrer"
+            }
+        },
+        "event": {
+            "event": {
+                "name": "\u00c9v\u00e9nement Snoo",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "activity": "Appui d'activit\u00e9",
+                            "command": "Commande envoy\u00e9e",
+                            "config_change": "Configuration modifi\u00e9e",
+                            "cry": "Pleurs",
+                            "long_activity_press": "Appui long d'activit\u00e9",
+                            "power": "Bouton d'alimentation enfonc\u00e9",
+                            "restart": "Red\u00e9marrer",
+                            "safety_clip": "Clip de s\u00e9curit\u00e9 chang\u00e9",
+                            "status_requested": "\u00c9tat demand\u00e9",
+                            "sticky_white_noise_updated": "Sons d'endormissement mis \u00e0 jour",
+                            "timer": "Minuteur"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "name": "Intensit\u00e9",
+                "state": {
+                    "baseline": "Niveau de base",
+                    "level1": "Niveau 1",
+                    "level2": "Niveau 2",
+                    "level3": "Niveau 3",
+                    "level4": "Niveau 4",
+                    "stop": "Arr\u00eat\u00e9"
+                }
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "\u00c9tat",
+                "state": {
+                    "baseline": "Niveau de base",
+                    "level1": "Niveau 1",
+                    "level2": "Niveau 2",
+                    "level3": "Niveau 3",
+                    "level4": "Niveau 4",
+                    "pretimeout": "Avant expiration",
+                    "stop": "Arr\u00eat\u00e9",
+                    "timeout": "Expiration",
+                    "weaning_baseline": "Niveau de base (Sevrage)"
+                }
+            },
+            "time_left": {
+                "name": "Temps restant"
+            }
+        },
+        "switch": {
+            "hold": {
+                "name": "Verrouillage de niveau"
+            },
+            "sticky_white_noise": {
+                "name": "Sons d'endormissement"
+            }
+        }
+    },
+    "exceptions": {
+        "select_failed": {
+            "message": "Erreur lors de la mise \u00e0 jour de {name} vers {option}"
+        },
+        "start_snoo_failed": {
+            "message": "Le d\u00e9marrage de {name} a \u00e9chou\u00e9"
+        },
+        "switch_off_failed": {
+            "message": "\u00c9chec de l'extinction de {name}"
+        },
+        "switch_on_failed": {
+            "message": "\u00c9chec de l'allumage de {name}"
+        }
+    }
+}

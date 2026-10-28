@@ -1,0 +1,68 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Gailua dagoeneko konfiguratuta dago"
+        },
+        "error": {
+            "cannot_connect": "Konexioak huts egin du",
+            "invalid_auth": "Autentifikazio baliogabea",
+            "unknown": "Ustekabeko errorea"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Pasahitza",
+                    "username": "Erabiltzaile-izena"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "start_snoo": {
+                "name": "Hasi"
+            }
+        },
+        "event": {
+            "event": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "command": "Agindua bidalia",
+                            "timer": "Tenporizadorea"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "state": {
+                    "level1": "1. maila",
+                    "level2": "2. maila",
+                    "level3": "3. maila",
+                    "level4": "4. maila",
+                    "stop": "Geldituta"
+                }
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "Egoera",
+                "state": {
+                    "level1": "1. maila",
+                    "level2": "2. maila",
+                    "level3": "3. maila",
+                    "level4": "4. maila",
+                    "stop": "Geldituta",
+                    "timeout": "Denbora-muga"
+                }
+            }
+        },
+        "switch": {
+            "hold": {
+                "name": "Blokeo maila"
+            }
+        }
+    }
+}

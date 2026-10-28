@@ -1,0 +1,115 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ure\u0111aj je ve\u0107 pode\u0161en"
+        },
+        "error": {
+            "cannot_connect": "Povezivanje nije uspelo",
+            "invalid_auth": "Neva\u017ee\u0107i podaci za prijavu",
+            "unknown": "Neo\u010dekivana gre\u0161ka"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Lozinka",
+                    "username": "Korisni\u010dko ime"
+                },
+                "data_description": {
+                    "password": "Lozinka va\u0161eg Snoo naloga",
+                    "username": "Va\u0161e Snoo korisni\u010dko ime ili email adresa"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "left_clip": {
+                "name": "Leva sigurnosna kop\u010da"
+            },
+            "right_clip": {
+                "name": "Desna sigurnosna kop\u010da"
+            }
+        },
+        "button": {
+            "start_snoo": {
+                "name": "Start"
+            }
+        },
+        "event": {
+            "event": {
+                "name": "Snoo doga\u0111aj",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "activity": "Pritisak za aktivaciju",
+                            "command": "Komanda je poslata",
+                            "config_change": "Konfiguracija je promenjena",
+                            "cry": "Pla\u010d",
+                            "long_activity_press": "Dug pritisak za aktivaciju",
+                            "power": "Pritisnuto je dugme za napajanje",
+                            "restart": "Ponovo pokreni",
+                            "safety_clip": "Sigurnosna kop\u010da je promenjena",
+                            "status_requested": "Zatra\u017een status",
+                            "sticky_white_noise_updated": "Zvuci za spavanje su a\u017eurirani",
+                            "timer": "Tajmer"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "name": "Intenzitet",
+                "state": {
+                    "baseline": "Osnovna linija",
+                    "level1": "Nivo 1",
+                    "level2": "Nivo 2",
+                    "level3": "Nivo 3",
+                    "level4": "Nivo 4",
+                    "stop": "Zaustavljeno"
+                }
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "Stanje",
+                "state": {
+                    "baseline": "Osnovna linija",
+                    "level1": "Nivo 1",
+                    "level2": "Nivo 2",
+                    "level3": "Nivo 3",
+                    "level4": "Nivo 4",
+                    "pretimeout": "Pre isteka vremena",
+                    "stop": "Zaustavljeno",
+                    "timeout": "Vreme \u010dekanja (u sekundama)",
+                    "weaning_baseline": "Osnovni nivo (postepeno ukidanje)"
+                }
+            },
+            "time_left": {
+                "name": "Preostalo vreme"
+            }
+        },
+        "switch": {
+            "hold": {
+                "name": "Zaklju\u010davanje nivoa"
+            },
+            "sticky_white_noise": {
+                "name": "Zvuci za spavanje"
+            }
+        }
+    },
+    "exceptions": {
+        "select_failed": {
+            "message": "Gre\u0161ka prilikom a\u017euriranja {name} na {option}"
+        },
+        "start_snoo_failed": {
+            "message": "Pokretanje {name} nije uspelo"
+        },
+        "switch_off_failed": {
+            "message": "Isklju\u010divanje ure\u0111aja {name} nije uspelo"
+        },
+        "switch_on_failed": {
+            "message": "Uklju\u010divanje ure\u0111aja {name} nije uspelo"
+        }
+    }
+}

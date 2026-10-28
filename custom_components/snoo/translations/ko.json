@@ -1,0 +1,115 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\uae30\uae30\uac00 \uc774\ubbf8 \uad6c\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+        },
+        "error": {
+            "cannot_connect": "\uc5f0\uacb0\ud558\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4",
+            "invalid_auth": "\uc778\uc99d\uc774 \uc798\ubabb\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
+            "unknown": "\uc608\uc0c1\uce58 \ubabb\ud55c \uc624\ub958\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "\ube44\ubc00\ubc88\ud638",
+                    "username": "\uc0ac\uc6a9\uc790 \uc774\ub984"
+                },
+                "data_description": {
+                    "password": "Snoo \ube44\ubc00\ubc88\ud638",
+                    "username": "Snoo \uc0ac\uc6a9\uc790 \uc774\ub984 \ub610\ub294 \uc774\uba54\uc77c"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "left_clip": {
+                "name": "\uc67c\ucabd \uc548\uc804 \ud074\ub9bd"
+            },
+            "right_clip": {
+                "name": "\uc624\ub978\ucabd \uc548\uc804 \ud074\ub9bd"
+            }
+        },
+        "button": {
+            "start_snoo": {
+                "name": "\uc2dc\uc791"
+            }
+        },
+        "event": {
+            "event": {
+                "name": "\uc2a4\ub204 \uc774\ubca4\ud2b8",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "activity": "\ud65c\ub3d9 \ud504\ub808\uc2a4",
+                            "command": "\uba85\ub839\uc774 \uc804\uc1a1\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
+                            "config_change": "\uc124\uc815\uc774 \ubcc0\uacbd\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
+                            "cry": "\uc6b8\ub2e4",
+                            "long_activity_press": "\uc7a5\uc2dc\uac04 \ud65c\ub3d9 \ud504\ub808\uc2a4",
+                            "power": "\uc804\uc6d0 \ubc84\ud2bc\uc744 \ub20c\ub800\uc2b5\ub2c8\ub2e4",
+                            "restart": "\ub2e4\uc2dc \uc2dc\uc791",
+                            "safety_clip": "\uc548\uc804 \ud074\ub9bd \uad50\uccb4\ub428",
+                            "status_requested": "\uc0c1\ud0dc \uc694\uccad\ub428",
+                            "sticky_white_noise_updated": "\uc218\uba74 \uc720\ub3c4\uc74c \uc5c5\ub370\uc774\ud2b8\ub428",
+                            "timer": "\ud0c0\uc774\uba38"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "name": "\uac15\ud568",
+                "state": {
+                    "baseline": "\uae30\uc900\uc120",
+                    "level1": "\ub808\ubca8 1",
+                    "level2": "\ub808\ubca8 2",
+                    "level3": "\ub808\ubca8 3",
+                    "level4": "\ub808\ubca8 4",
+                    "stop": "\uc911\uc9c0\ub428"
+                }
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "\uc0c1\ud0dc",
+                "state": {
+                    "baseline": "\uae30\uc900\uc120",
+                    "level1": "\ub808\ubca8 1",
+                    "level2": "\ub808\ubca8 2",
+                    "level3": "\ub808\ubca8 3",
+                    "level4": "\ub808\ubca8 4",
+                    "pretimeout": "\uc0ac\uc804 \ud0c0\uc784\uc544\uc6c3",
+                    "stop": "\uc911\uc9c0\ub428",
+                    "timeout": "\ud0c0\uc784\uc544\uc6c3",
+                    "weaning_baseline": "\uae30\uc900\uc120(\uc774\uc720\uc2dd \uc2dc\uc791)"
+                }
+            },
+            "time_left": {
+                "name": "\ub0a8\uc740 \uc2dc\uac04"
+            }
+        },
+        "switch": {
+            "hold": {
+                "name": "\ub808\ubca8 \uc7a0\uae08"
+            },
+            "sticky_white_noise": {
+                "name": "\uc7a0\uc798 \ub54c \ub4e3\uae30 \uc88b\uc740 \uc18c\ub9ac"
+            }
+        }
+    },
+    "exceptions": {
+        "select_failed": {
+            "message": "\uc5c5\ub370\uc774\ud2b8 \uc911 \uc624\ub958 \ubc1c\uc0dd {name} \uc5d0\uac8c {option}"
+        },
+        "start_snoo_failed": {
+            "message": "\uc2dc\uc791 {name} \uc2e4\ud328\ud55c"
+        },
+        "switch_off_failed": {
+            "message": "\uc120\ud68c {name} \uaebc\uc9d0 \uc2e4\ud328"
+        },
+        "switch_on_failed": {
+            "message": "\uc120\ud68c {name} \uc2e4\ud328\ud568"
+        }
+    }
+}

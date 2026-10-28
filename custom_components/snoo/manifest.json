@@ -1,0 +1,20 @@
+{
+  "domain": "snoo",
+  "name": "Happiest Baby Snoo",
+  "codeowners": [
+    "@Lash-L"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/jasperchan/python-snoo",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "loggers": [
+    "snoo"
+  ],
+  "quality_scale": "bronze",
+  "requirements": [
+    "python-snoo==0.8.3"
+  ],
+  "version": "2026.10.4.1",
+  "issue_tracker": "https://github.com/jasperchan/python-snoo/issues"
+}
