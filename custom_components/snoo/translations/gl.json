@@ -1,0 +1,129 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "O dispositivo xa est\u00e1 configurado",
+            "unique_id_mismatch": "As credenciais proporcionadas pertencen a unha conta de Snoo distinta da configurada anteriormente."
+        },
+        "error": {
+            "cannot_connect": "Non se puido conectar",
+            "invalid_auth": "Autenticaci\u00f3n non v\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasinal"
+                },
+                "data_description": {
+                    "password": "O teu contrasinal de Snoo"
+                },
+                "description": "O contrasinal de {username} xa non \u00e9 v\u00e1lido. Introduce o teu contrasinal actual de Snoo.",
+                "title": "A autenticaci\u00f3n caducou para {name}"
+            },
+            "user": {
+                "data": {
+                    "password": "Contrasinal",
+                    "username": "Nome de usuario"
+                },
+                "data_description": {
+                    "password": "O teu contrasinal de Snoo",
+                    "username": "O teu nome de usuario ou correo electr\u00f3nico de Snoo"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "left_clip": {
+                "name": "Clip de seguridade esquerdo"
+            },
+            "right_clip": {
+                "name": "Clip de seguridade dereito"
+            }
+        },
+        "button": {
+            "start_snoo": {
+                "name": "Iniciar"
+            }
+        },
+        "event": {
+            "event": {
+                "name": "Evento de Snoo",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "activity": "Pulsaci\u00f3n de actividade",
+                            "command": "Orde enviada",
+                            "config_change": "Configuraci\u00f3n cambiada",
+                            "cry": "Choro",
+                            "long_activity_press": "Pulsaci\u00f3n longa de actividade",
+                            "power": "Bot\u00f3n de acendido premido",
+                            "restart": "Reiniciar",
+                            "safety_clip": "Clip de seguridade cambiado",
+                            "status_requested": "Estado solicitado",
+                            "sticky_white_noise_updated": "Sons para durmir actualizados",
+                            "timer": "Temporizador"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "name": "Intensidade",
+                "state": {
+                    "baseline": "Base",
+                    "level1": "Nivel 1",
+                    "level2": "Nivel 2",
+                    "level3": "Nivel 3",
+                    "level4": "Nivel 4",
+                    "stop": "Detida"
+                }
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "Estado",
+                "state": {
+                    "baseline": "Base",
+                    "level1": "Nivel 1",
+                    "level2": "Nivel 2",
+                    "level3": "Nivel 3",
+                    "level4": "Nivel 4",
+                    "pretimeout": "Antes do tempo l\u00edmite",
+                    "stop": "Detida",
+                    "timeout": "Tempo de espera",
+                    "weaning_baseline": "Base (desteta)"
+                }
+            },
+            "time_left": {
+                "name": "Tempo restante"
+            }
+        },
+        "switch": {
+            "hold": {
+                "name": "Bloqueo do nivel"
+            },
+            "sticky_white_noise": {
+                "name": "Sons para durmir"
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3n non v\u00e1lida"
+        },
+        "select_failed": {
+            "message": "Erro ao cambiar {name} a {option}"
+        },
+        "start_snoo_failed": {
+            "message": "Fallou o inicio de {name}"
+        },
+        "switch_off_failed": {
+            "message": "Fallou o apagado de {name}"
+        },
+        "switch_on_failed": {
+            "message": "Fallou o acendido de {name}"
+        }
+    }
+}

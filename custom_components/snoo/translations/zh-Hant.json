@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210"
+            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "unique_id_mismatch": "\u63d0\u4f9b\u7684\u6191\u8b49\u5c6c\u65bc\u8207\u5148\u524d\u8a2d\u5b9a\u7684 Snoo \u5e33\u865f\u4e0d\u540c\u7684\u5e33\u865f\u3002"
         },
         "error": {
             "cannot_connect": "\u9023\u7dda\u5931\u6557",
@@ -9,6 +10,16 @@
             "unknown": "\u672a\u9810\u671f\u932f\u8aa4"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "\u5bc6\u78bc"
+                },
+                "data_description": {
+                    "password": "Snoo \u5e33\u865f\u5bc6\u78bc"
+                },
+                "description": "{username} \u7684\u5bc6\u78bc\u5df2\u5931\u6548\u3002\u8acb\u8f38\u5165\u76ee\u524d\u7684 Snoo \u5bc6\u78bc\u3002",
+                "title": "{name} \u8a8d\u8b49\u5df2\u904e\u671f"
+            },
             "user": {
                 "data": {
                     "password": "\u5bc6\u78bc",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "\u8eab\u4efd\u9a57\u8b49\u7121\u6548"
+        },
         "select_failed": {
             "message": "\u66f4\u65b0 {name} \u81f3 {option} \u6642\u767c\u751f\u932f\u8aa4"
         },

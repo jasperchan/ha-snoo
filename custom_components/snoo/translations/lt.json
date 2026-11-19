@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Prietaisas jau sukonfig\u016bruotas"
+            "already_configured": "Prietaisas jau sukonfig\u016bruotas",
+            "unique_id_mismatch": "Pateikti prisijungimo duomenys priklauso kitai Snoo paskyrai nei ta, kuri buvo sukonfig\u016bruota anks\u010diau."
         },
         "error": {
             "cannot_connect": "Nepavyko prisijungti",
@@ -9,6 +10,16 @@
             "unknown": "Netik\u0117ta klaida"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Slapta\u017eodis"
+                },
+                "data_description": {
+                    "password": "J\u016bs\u0173 Snoo slapta\u017eodis"
+                },
+                "description": "Slapta\u017eodis, skirtas {username} nebegalioja. \u012eveskite dabartin\u012f Snoo slapta\u017eod\u012f.",
+                "title": "Baig\u0117si {name} autentifikavimo galiojimas"
+            },
             "user": {
                 "data": {
                     "password": "Slapta\u017eodis",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Neteisingas autentifikavimas"
+        },
         "select_failed": {
             "message": "Klaida atnaujinant {name} \u012f {option}"
         },

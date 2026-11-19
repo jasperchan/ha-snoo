@@ -9,6 +9,15 @@
             "unknown": "Onverwachte fout"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Wachtwoord"
+                },
+                "data_description": {
+                    "password": "Je Snoo-wachtwoord"
+                },
+                "title": "Authenticatie is verlopen voor {name}"
+            },
             "user": {
                 "data": {
                     "password": "Wachtwoord",

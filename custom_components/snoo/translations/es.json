@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositivo ya est\u00e1 configurado"
+            "already_configured": "El dispositivo ya est\u00e1 configurado",
+            "unique_id_mismatch": "Las credenciales proporcionadas pertenecen a una cuenta de Snoo distinta de la configurada anteriormente."
         },
         "error": {
             "cannot_connect": "No se pudo conectar",
@@ -9,6 +10,16 @@
             "unknown": "Error inesperado"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrase\u00f1a"
+                },
+                "data_description": {
+                    "password": "Tu contrase\u00f1a de Snoo"
+                },
+                "description": "La contrase\u00f1a de {username} ya no es v\u00e1lida. Por favor, introduce tu contrase\u00f1a actual de Snoo.",
+                "title": "Autenticaci\u00f3n caducada para {name}"
+            },
             "user": {
                 "data": {
                     "password": "Contrase\u00f1a",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3n no v\u00e1lida"
+        },
         "select_failed": {
             "message": "Error al actualizar {name} a {option}"
         },

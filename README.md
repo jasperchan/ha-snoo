@@ -20,12 +20,12 @@ pin, this repo ships the fix.
   `python_snoo` logger, and keeps the connection alive if a callback raises. The commit it was taken from is recorded in
   `custom_components/snoo/python_snoo/VENDORED_FROM`.
 - The event entity accepts the `restart` event the SNOO sends after a reboot (core logs a traceback for it).
-- Everything else is Home Assistant 2026.10.4's `snoo` integration, unchanged.
+- Everything else is Home Assistant 2026.11.2's `snoo` integration, unchanged.
 
 ## Install (HACS)
 
 1. HACS → Integrations → ⋮ → *Custom repositories* → add `https://github.com/jasperchan/ha-snoo`, category *Integration*.
-2. Install "Happiest Baby SNOO (reconnecting fork)" and restart Home Assistant.
+2. Install "Happiest Baby Snoo (Fork)" and restart Home Assistant.
 3. HA logs a warning that a custom integration replaces the core `snoo` integration. That's expected.
 
 To go back to core: remove the integration in HACS (or delete `custom_components/snoo`) and restart.

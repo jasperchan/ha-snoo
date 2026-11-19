@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Dispositivo j\u00e1 configurado"
+            "already_configured": "Dispositivo j\u00e1 configurado",
+            "unique_id_mismatch": "As credenciais fornecidas pertencem a uma conta Snoo diferente daquela que foi configurada anteriormente."
         },
         "error": {
             "cannot_connect": "A liga\u00e7\u00e3o falhou",
@@ -9,6 +10,16 @@
             "unknown": "Erro inesperado"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Palavra-passe"
+                },
+                "data_description": {
+                    "password": "A sua palavra-passe Snoo"
+                },
+                "description": "A palavra-passe para {username} j\u00e1 n\u00e3o \u00e9 v\u00e1lida. Introduza a sua palavra-passe atual do Snoo.",
+                "title": "A autentica\u00e7\u00e3o expirou para {name}"
+            },
             "user": {
                 "data": {
                     "password": "Palavra-passe",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Autentica\u00e7\u00e3o inv\u00e1lida"
+        },
         "select_failed": {
             "message": "Erro ao atualizar {name} para {option}"
         },

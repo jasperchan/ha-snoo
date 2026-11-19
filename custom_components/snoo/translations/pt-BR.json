@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "O dispositivo j\u00e1 est\u00e1 configurado"
+            "already_configured": "O dispositivo j\u00e1 est\u00e1 configurado",
+            "unique_id_mismatch": "As credenciais fornecidas pertencem a uma conta Snoo diferente da configurada anteriormente."
         },
         "error": {
             "cannot_connect": "Falha ao conectar",
@@ -9,6 +10,16 @@
             "unknown": "Erro inesperado"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Senha"
+                },
+                "data_description": {
+                    "password": "Sua senha do Snoo"
+                },
+                "description": "A senha de {username} n\u00e3o \u00e9 mais v\u00e1lida. Insira sua senha atual do Snoo.",
+                "title": "Autentica\u00e7\u00e3o expirada para {name}"
+            },
             "user": {
                 "data": {
                     "password": "Senha",
@@ -22,6 +33,54 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "left_clip": {
+                "name": "Clipe de seguran\u00e7a esquerdo"
+            },
+            "right_clip": {
+                "name": "Clipe de seguran\u00e7a direito"
+            }
+        },
+        "button": {
+            "start_snoo": {
+                "name": "Iniciar"
+            }
+        },
+        "event": {
+            "event": {
+                "name": "Evento Snoo",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "activity": "Pressionamento de atividade",
+                            "command": "Comando enviado",
+                            "config_change": "Configura\u00e7\u00e3o alterada",
+                            "cry": "Choro",
+                            "long_activity_press": "Pressionamento longo de atividade",
+                            "power": "Bot\u00e3o de energia pressionado",
+                            "restart": "Reiniciar",
+                            "safety_clip": "Clipe de seguran\u00e7a alterado",
+                            "status_requested": "Status solicitado",
+                            "sticky_white_noise_updated": "Sons para dormir atualizados",
+                            "timer": "Temporizador"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "intensity": {
+                "name": "Intensidade",
+                "state": {
+                    "baseline": "Refer\u00eancia",
+                    "level1": "N\u00edvel 1",
+                    "level2": "N\u00edvel 2",
+                    "level3": "N\u00edvel 3",
+                    "level4": "N\u00edvel 4",
+                    "stop": "Parado"
+                }
+            }
+        },
         "sensor": {
             "state": {
                 "name": "Estado",
@@ -33,15 +92,33 @@
                     "level4": "N\u00edvel 4",
                     "pretimeout": "Pr\u00e9-tempo limite",
                     "stop": "Parado",
-                    "timeout": "Tempo limite"
+                    "timeout": "Tempo limite",
+                    "weaning_baseline": "Linha de base (desmame)"
                 }
             },
             "time_left": {
                 "name": "Tempo restante"
             }
+        },
+        "switch": {
+            "hold": {
+                "name": "Bloqueio de n\u00edvel"
+            },
+            "sticky_white_noise": {
+                "name": "Sons para dormir"
+            }
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Autentica\u00e7\u00e3o inv\u00e1lida"
+        },
+        "select_failed": {
+            "message": "Erro ao atualizar {name} para {option}"
+        },
+        "start_snoo_failed": {
+            "message": "Falha ao iniciar {name}"
+        },
         "switch_off_failed": {
             "message": "Falha ao desligar {name}"
         },

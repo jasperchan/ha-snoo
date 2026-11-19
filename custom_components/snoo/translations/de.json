@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Ger\u00e4t ist bereits konfiguriert"
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "unique_id_mismatch": "Die angegebenen Anmeldedaten geh\u00f6ren zu einem anderen Snoo-Konto als dem zuvor konfigurierten."
         },
         "error": {
             "cannot_connect": "Verbindung fehlgeschlagen",
@@ -9,6 +10,16 @@
             "unknown": "Unerwarteter Fehler"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Passwort"
+                },
+                "data_description": {
+                    "password": "Dein Snoo-Passwort"
+                },
+                "description": "Das Passwort f\u00fcr {username} ist nicht mehr g\u00fcltig. Bitte gib dein aktuelles Snoo-Passwort ein.",
+                "title": "Authentifizierung f\u00fcr {name} abgelaufen"
+            },
             "user": {
                 "data": {
                     "password": "Passwort",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Ung\u00fcltige Authentifizierung"
+        },
         "select_failed": {
             "message": "Fehler beim Aktualisieren von {name} auf {option}"
         },

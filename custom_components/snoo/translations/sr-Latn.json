@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Ure\u0111aj je ve\u0107 pode\u0161en"
+            "already_configured": "Ure\u0111aj je ve\u0107 pode\u0161en",
+            "unique_id_mismatch": "Uneti podaci pripadaju drugom Snoo nalogu, a ne onom koji je prethodno konfigurisan."
         },
         "error": {
             "cannot_connect": "Povezivanje nije uspelo",
@@ -9,6 +10,16 @@
             "unknown": "Neo\u010dekivana gre\u0161ka"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Lozinka"
+                },
+                "data_description": {
+                    "password": "Lozinka va\u0161eg Snoo naloga"
+                },
+                "description": "Lozinka za korisnika {username} vi\u0161e nije va\u017ee\u0107a. Unesite trenutnu lozinku za va\u0161 Snoo nalog.",
+                "title": "Prijava je istekla za {name}"
+            },
             "user": {
                 "data": {
                     "password": "Lozinka",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Neva\u017ee\u0107i podaci za prijavu"
+        },
         "select_failed": {
             "message": "Gre\u0161ka prilikom a\u017euriranja {name} na {option}"
         },

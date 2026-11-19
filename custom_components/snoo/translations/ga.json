@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "T\u00e1 an gl\u00e9as cumraithe cheana f\u00e9in"
+            "already_configured": "T\u00e1 an gl\u00e9as cumraithe cheana f\u00e9in",
+            "unique_id_mismatch": "Baineann na dinti\u00fair a sol\u00e1thra\u00edodh le cuntas Snoo at\u00e1 difri\u00fail leis an gceann a cumra\u00edodh roimhe seo."
         },
         "error": {
             "cannot_connect": "Theip ar an nascadh",
@@ -9,6 +10,16 @@
             "unknown": "Earr\u00e1id gan choinne"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Pasfhocal"
+                },
+                "data_description": {
+                    "password": "Do phasfhocal Snoo"
+                },
+                "description": "N\u00edl an focal faire do {username} bail\u00ed a thuilleadh. Cuir isteach do phasfhocal Snoo reatha, le do thoil.",
+                "title": "T\u00e1 an f\u00edordheimhni\u00fa imithe in \u00e9ag do {name}"
+            },
             "user": {
                 "data": {
                     "password": "Pasfhocal",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "F\u00edordheimhni\u00fa neamhbhail\u00ed"
+        },
         "select_failed": {
             "message": "Earr\u00e1id agus {name} \u00e1 nuashonr\u00fa go {option}"
         },

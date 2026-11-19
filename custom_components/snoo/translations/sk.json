@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Zariadenie u\u017e je nakonfigurovan\u00e9"
+            "already_configured": "Zariadenie u\u017e je nakonfigurovan\u00e9",
+            "unique_id_mismatch": "Zadan\u00e9 prihlasovacie \u00fadaje patria k in\u00e9mu \u00fa\u010dtu Snoo, ako bol ten, ktor\u00fd bol predt\u00fdm nakonfigurovan\u00fd."
         },
         "error": {
             "cannot_connect": "Nepodarilo sa pripoji\u0165",
@@ -9,6 +10,16 @@
             "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Heslo"
+                },
+                "data_description": {
+                    "password": "Va\u0161e Snoo heslo"
+                },
+                "description": "Heslo pre {username} u\u017e nie je platn\u00e9. Zadajte, pros\u00edm, svoje aktu\u00e1lne heslo pre Snoo.",
+                "title": "Vypr\u0161ala platnos\u0165 overenia pre {name}"
+            },
             "user": {
                 "data": {
                     "password": "Heslo",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "Neplatn\u00e9 overenie"
+        },
         "select_failed": {
             "message": "Chyba pri aktualiz\u00e1cii {name} na {option}"
         },

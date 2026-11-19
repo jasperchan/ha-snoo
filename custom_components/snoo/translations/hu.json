@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van",
+            "unique_id_mismatch": "A megadott hiteles\u00edt\u0151 adatok egy m\u00e1sik Snoo-fi\u00f3khoz tartoznak, mint amelyik kor\u00e1bban be lett \u00e1ll\u00edtva."
         },
         "error": {
             "cannot_connect": "Sikertelen csatlakoz\u00e1s",
@@ -9,6 +10,16 @@
             "unknown": "V\u00e1ratlan hiba"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Jelsz\u00f3"
+                },
+                "data_description": {
+                    "password": "Snoo jelszava"
+                },
+                "description": "A(z) {username} jelszava m\u00e1r nem \u00e9rv\u00e9nyes. K\u00e9rj\u00fck, adja meg a Snoo-fi\u00f3kj\u00e1hoz tartoz\u00f3 jelenlegi jelsz\u00f3t.",
+                "title": "A(z) {name} hiteles\u00edt\u00e9se lej\u00e1rt"
+            },
             "user": {
                 "data": {
                     "password": "Jelsz\u00f3",
@@ -99,6 +110,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s"
+        },
         "select_failed": {
             "message": "Hiba t\u00f6rt\u00e9nt {name} friss\u00edt\u00e9sekor {option} \u00e9rt\u00e9kre"
         },

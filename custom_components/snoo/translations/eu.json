@@ -9,6 +9,12 @@
             "unknown": "Ustekabeko errorea"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Pasahitza"
+                },
+                "title": "{name}-entzako autortza iraungi da"
+            },
             "user": {
                 "data": {
                     "password": "Pasahitza",
@@ -63,6 +69,11 @@
             "hold": {
                 "name": "Blokeo maila"
             }
+        }
+    },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Autentifikazio baliogabea"
         }
     }
 }

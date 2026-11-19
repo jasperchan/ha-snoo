@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "\u30c7\u30d0\u30a4\u30b9\u306f\u3059\u3067\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u3059"
+            "already_configured": "\u30c7\u30d0\u30a4\u30b9\u306f\u3059\u3067\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u3059",
+            "unique_id_mismatch": "\u6307\u5b9a\u3055\u308c\u305f\u8a8d\u8a3c\u60c5\u5831\u306f\u3001\u4ee5\u524d\u306b\u8a2d\u5b9a\u3055\u308c\u305f\u3082\u306e\u3068\u306f\u7570\u306a\u308bSnoo\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u3082\u306e\u3068\u306a\u3063\u3066\u3044\u307e\u3059\u3002"
         },
         "error": {
             "cannot_connect": "\u63a5\u7d9a\u306b\u5931\u6557\u3057\u307e\u3057\u305f",
@@ -9,6 +10,16 @@
             "unknown": "\u4e88\u671f\u3057\u306a\u3044\u30a8\u30e9\u30fc"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "\u30d1\u30b9\u30ef\u30fc\u30c9"
+                },
+                "data_description": {
+                    "password": "Snoo\u306e\u30d1\u30b9\u30ef\u30fc\u30c9"
+                },
+                "description": "{username} \u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u306f\u3001\u3082\u306f\u3084\u6709\u52b9\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u73fe\u5728\u306e Snoo \u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                "title": "{name} \u306e\u8a8d\u8a3c\u306e\u6709\u52b9\u671f\u9650\u304c\u5207\u308c\u307e\u3057\u305f"
+            },
             "user": {
                 "data": {
                     "password": "\u30d1\u30b9\u30ef\u30fc\u30c9",
@@ -42,6 +53,7 @@
                             "cry": "\u6ce3\u304f",
                             "long_activity_press": "\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3\u9577\u62bc\u3057",
                             "power": "\u96fb\u6e90\u30dc\u30bf\u30f3\u304c\u62bc\u3055\u308c\u305f",
+                            "restart": "\u518d\u8d77\u52d5",
                             "safety_clip": "\u5b89\u5168\u30af\u30ea\u30c3\u30d7\u304c\u5909\u66f4\u3055\u308c\u307e\u3057\u305f",
                             "status_requested": "\u30b9\u30c6\u30fc\u30bf\u30b9\u8981\u6c42",
                             "sticky_white_noise_updated": "\u7761\u7720\u6642\u9593\u306e\u30b5\u30a6\u30f3\u30c9\u304c\u66f4\u65b0\u3055\u308c\u307e\u3057\u305f",
@@ -75,7 +87,8 @@
                     "level4": "\u30ec\u30d9\u30eb 4",
                     "pretimeout": "\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u524d",
                     "stop": "\u505c\u6b62\u3057\u307e\u3057\u305f",
-                    "timeout": "\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8"
+                    "timeout": "\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8",
+                    "weaning_baseline": "\u30d9\u30fc\u30b9\u30e9\u30a4\u30f3\uff08\u96e2\u4e73\uff09"
                 }
             },
             "time_left": {
@@ -92,6 +105,9 @@
         }
     },
     "exceptions": {
+        "invalid_auth": {
+            "message": "\u7121\u52b9\u306a\u8a8d\u8a3c"
+        },
         "select_failed": {
             "message": "{name} \u306e\u66f4\u65b0\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u305f\u3002 {option}"
         },
